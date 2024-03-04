@@ -1,20 +1,29 @@
 <script setup>
-import TheWelcome from '../components/TheWelcome.vue'
-import { ref } from 'vue'
-
-const count = ref(0)
-
-console.log(count) // { value: 0 }
-console.log(count.value) // 0
-
-count.value++
-console.log(count.value) // 1
+import clicker from '../components/clicker.vue'
 </script>
 
 <template>
-  
   <main>
-
-    <TheWelcome />
+    <div class="box">
+    <h1 class="Text">Kirby Clicker</h1>
+      <clicker />
+    </div>
+    
   </main>
 </template>
+
+<style>
+.Text {
+  font-weight: bold;
+  text-decoration: underline;
+  text-align: center;
+  color: #FF6EC7;
+  font-size: 70px;
+
+  margin-bottom: 20px;
+}
+.box {
+  border: 5px solid #C154C1; 
+    padding: 110px; 
+}
+</style>
